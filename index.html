@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <!-- CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous">
+    <!-- Icon Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+    integrity="sha384-CK2SzKma4jA5H/MXDUU7i1TqZlCFaD4T01vtyDFvPlD97JQyS+IsSh1nI2EFbpyk"
+    crossorigin="anonymous">
+</head>
+<body data-bs-theme="dark">
+
+    <nav class="navbar navbar-expand-lg bg-body">
+        <div class="container">
+            <a class="navbar-brand" href="#">🎓 Cursos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Desenvolvimento Web</a></li>
+                        <li><a class="dropdown-item" href="#">Programação</a></li>
+                        <li><a class="dropdown-item" href="#">Banco de Dados</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+            <form class="d-flex ms-auto" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button type="button" class="btn btn-success" aria-label="Buscar">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <a href="#" class="btn btn-outline-light position-relative ms-2" aria-label="Carrinho">
+                <i class="bi bi-cart"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+            </a>
+
+            <button type="button" class="btn btn-outline-success ms-2">Entrar</button>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center bg-body-secondary">      <!-- destaque -->
+        <div class="container"> 
+            <h1 class="display-4">
+                Aprenda a construir interfaces
+            </h1>
+
+            <p class="lead">
+                Grade responsiva, componentes prontos e utilitários.
+            </p>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMatricula">
+                Ver cursos
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="mb-5">  <!-- grade de cards -->
+            <h2 class="mb-4">Nossos cursos</h2> 
+            <div class="row g-4">
+                <!-- CARD 1 --> 
+                <div class="col-12 col-sm-6 col-lg-8"> 
+                    <div class="card h-100"> 
+                        <div class="card-body d-flex flex-column"> 
+                            <h5 class="card-title">HTML e CSS</h5> 
+                            <p class="card-text"> Aprenda a criar páginas web usando HTML e CSS do zero até o primeiro site completo
+                                com exercícios práticos em cada aula </p> 
+                            <a href="#" class="btn btn-primary mt-auto">Ver curso</a> 
+                        </div> 
+                    </div> 
+                </div> 
+                <!-- CARD 2 --> 
+                <div class="col-12 col-sm-6 col-lg-4"> 
+                    <div class="card h-100"> 
+                        <div class="card-body d-flex flex-column"> 
+                            <h5 class="card-title">JavaScript</h5> 
+                            <p class="card-text"> Aprenda lógica de programação e interatividade para páginas web. </p> 
+                            <a href="#" class="btn btn-primary mt-auto">Ver curso</a>
+                        </div> 
+                    </div> 
+                </div> 
+                <!-- CARD 3 --> 
+                <div class="col-12 col-sm-6 col-lg-4"> 
+                    <div class="card h-100"> 
+                        <div class="card-body d-flex flex-column"> 
+                            <h5 class="card-title">Bootstrap</h5> 
+                            <p class="card-text"> Construa interfaces responsivas utilizando componentes e classes prontas. </p> 
+                            <a href="#" class="btn btn-primary mt-auto">Ver curso</a> 
+                        </div> 
+                    </div> 
+                </div> 
+                <!-- CARD 4 --> 
+                <div class="col-12 col-sm-6 col-lg-4"> 
+                    <div class="card h-100"> 
+                        <div class="card-body d-flex flex-column"> 
+                            <h5 class="card-title">Python</h5> 
+                            <p class="card-text"> Comece a programar utilizando uma linguagem simples e bastante utilizada. </p> 
+                            <a href="#" class="btn btn-primary mt-auto">Ver curso</a>
+                        </div> 
+                    </div> 
+                </div> 
+                <!-- CARD 5 --> 
+                <div class="col-12 col-sm-6 col-lg-4"> 
+                    <div class="card h-100"> 
+                        <div class="card-body d-flex flex-column"> 
+                            <h5 class="card-title">Banco de Dados</h5> 
+                            <p class="card-text"> Aprenda os principais conceitos de bancos de dados relacionais. </p> 
+                            <a href="#" class="btn btn-primary mt-auto">Ver curso</a> 
+                        </div> 
+                    </div> 
+                </div> 
+                <!-- CARD 6 --> 
+                <div class="col-12 col-sm-6 col-lg-4"> 
+                    <div class="card h-100"> 
+                        <div class="card-body d-flex flex-column"> 
+                            <h5 class="card-title">Git e GitHub</h5> 
+                            <p class="card-text"> Aprenda a controlar versões e organizar seus projetos. </p> 
+                            <a href="#" class="btn btn-primary mt-auto">Ver curso</a> 
+                        </div> 
+                    </div> 
+                </div> 
+                <!-- CARD 7 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">C e Lógica</h5>
+                            <p class="card-text">Aprenda os fundamentos da programação com a linguagem C.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Ver curso</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 8 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Node.js</h5>
+                            <p class="card-text">Crie servidores e APIs usando JavaScript fora do navegador.</p>
+                            <a href="#" class="btn btn-primary mt-auto">Ver curso</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="mb-5">    <!-- tabela de turmas -->
+            <h2 class="mb-4">Turmas</h2> 
+            <div class="table-responsive"> 
+                <table class="table table-striped"> 
+                    <thead> 
+                        <tr> 
+                            <th>Curso</th> 
+                            <th>Professor</th> 
+                            <th>Horário</th> 
+                            <th>Vagas</th> 
+                        </tr> 
+                    </thead> 
+                    <tbody> 
+                        <tr> 
+                            <td>HTML e CSS</td> 
+                            <td>Riad</td> 
+                            <td>19h</td> 
+                            <td>10</td> 
+                        </tr> 
+                        <tr> 
+                            <td>JavaScript</td> 
+                            <td>Riad</td> 
+                            <td>19h</td> 
+                            <td>10</td> 
+                        </tr> 
+                        <tr> 
+                            <td>Bootstrap</td> 
+                            <td>Douglas</td> 
+                            <td>19h</td> 
+                            <td>15</td> 
+                        </tr>
+                        <tr> 
+                            <td>Git e GitHub</td> 
+                            <td>Douglas</td> 
+                            <td>19h</td> 
+                            <td>15</td> 
+                        </tr>
+                        <tr> 
+                            <td>C e Lógica</td> 
+                            <td>Wesley</td> 
+                            <td>19h</td> 
+                            <td>15</td> 
+                        </tr> 
+                    </tbody> 
+                </table> 
+            </div> 
+        </section>
+
+        <section class="mb-5">    <!-- formulário de inscrição -->
+            <h2 class="mb-4">Inscrição</h2> 
+            <form class="row g-3"> 
+                <div class="col-12 col-md-6"> 
+                    <label for="nome" class="form-label">Nome</label> 
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome"> 
+                </div> 
+                <div class="col-12 col-md-6"> 
+                    <label for="email" class="form-label">E-mail</label> 
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail"> 
+                </div> 
+                <div class="col-12 col-md-6"> 
+                    <label for="curso" class="form-label">Curso</label> 
+                    <select class="form-select" id="curso"> 
+                        <option selected>Escolha um curso</option> 
+                        <option>HTML e CSS</option> 
+                        <option>JavaScript</option> 
+                        <option>Bootstrap</option>
+                        <option>Git e GitHub</option>
+                        <option>C e Lógica</option>
+                    </select> 
+                </div> 
+                <div class="col-12 col-md-6"> 
+                    <label for="telefone" class="form-label"> Telefone </label> 
+                    <div class="input-group"> 
+                        <span class="input-group-text">+55</span> 
+                        <input type="tel" class="form-control" id="telefone" placeholder="(45) 99999-9999"> 
+                    </div> 
+                </div> 
+                <div class="col-12"> 
+                    <div class="form-check"> 
+                        <input class="form-check-input" type="checkbox" id="termos"> 
+                        <label class="form-check-label" for="termos"> Aceito os termos da inscrição. </label> 
+                    </div> 
+                </div> 
+                <div class="col-12"> 
+                    <button type="submit" class="btn btn-primary"> Fazer inscrição </button> 
+                </div> 
+            </form> 
+        </section>
+
+        <section class="mb-5">
+
+        <h2 class="mb-4">Perguntas frequentes</h2>
+
+        <div class="accordion" id="faq">
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pergunta1"
+                        aria-expanded="true"
+                        aria-controls="pergunta1">
+
+                        Preciso saber programação?
+
+                    </button>
+                </h2>
+
+                <div id="pergunta1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faq">
+
+                    <div class="accordion-body">
+                        Não. Os cursos começam pelos conceitos básicos.
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pergunta2"
+                        aria-expanded="false"
+                        aria-controls="pergunta2">
+
+                        Os cursos são para iniciantes?
+
+                    </button>
+                </h2>
+
+                <div id="pergunta2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faq">
+
+                    <div class="accordion-body">
+                        Sim. Os conteúdos foram organizados para quem está começando.
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pergunta3"
+                        aria-expanded="false"
+                        aria-controls="pergunta3">
+
+                        Posso acessar os cursos pelo celular?
+
+                    </button>
+                </h2>
+
+                <div id="pergunta3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faq">
+
+                    <div class="accordion-body">
+                        Sim. A página foi desenvolvida de forma responsiva.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+</section>
+
+    </main>
+
+    <footer data-bs-theme="dark" class="bg-body-tertiary text-light py-4"> 
+        <div class="container"> 
+            <div class="d-flex justify-content-between align-items-center"> 
+                <p class="mb-0"> © 2026 — Análise e Desenvolvimento de Sistemas </p> 
+
+                <div> 
+                    <a href="#" class="text-light me-3" aria-label="Instagram"> 
+                        <i class="bi bi-instagram"></i> 
+                    </a>
+
+                    <a href="#" class="text-light me-3" aria-label="GitHub"> 
+                        <i class="bi bi-github"></i> 
+                    </a> 
+                    
+                    <a href="#" class="text-light" aria-label="LinkedIn"> 
+                        <i class="bi bi-linkedin"></i> 
+                    </a> 
+                </div> 
+            </div> 
+        </div>
+
+    </footer> 
+
+    <div class="modal fade" id="modalMatricula" tabindex="-1" aria-labelledby="modalMatriculaLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalMatriculaLabel">
+                    Matrícula
+                </h1>
+
+                <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Fechar">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form>
+
+                    <div class="mb-3">
+                        <label for="nomeModal" class="form-label">
+                            Nome
+                        </label>
+
+                        <input type="text"
+                            class="form-control"
+                            id="nomeModal"
+                            placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefoneModal" class="form-label">
+                            Telefone
+                        </label>
+
+                        <div class="input-group">
+                            <span class="input-group-text">+55</span>
+
+                            <input type="tel"
+                                class="form-control"
+                                id="telefoneModal"
+                                placeholder="(45) 99999-9999">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Matricular
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- JS BootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+crossorigin="anonymous"></script>
+</body>
+</html>
+
+<!--
+
+1) Por que col-12 col-sm-6 col-lg-4 produz um resultado diferente de col-4 sozinho?
+Resposta: Porque col-12 col-sm-6 col-lg-4 deixa layout responsivo dependendo da quantidade de coluna e 
+também de acordo com o tamanho da tela. Já col-4 mantém o memso tamanho independente se a tela é maior ou menor. 
+
+2) O que acontece com a sua grade se a soma das colunas de uma row passar de 12? Isso é erro?
+Resposta: O que não couber na linha é posicionado na linha seguinte. Não é erro.
+
+3) Qual a diferença prática entre .container e .container-fluid na sua página?
+Resposta: O .container mantém o centralizado e tem a largura maxima que varia de acordo com o tamanho da tela e o 
+.container-fluid ocupa 100% da largura ficando ponta a ponta
+
+4) Onde você usou data-bs-target e qual elemento cada um deles aponta?
+Resposta: Usei o data-bs-target na navbar, no botão "Ver cursos" e nas perguntas do accordion. 
+Na navbar o botão que abre o menu responsivo aponta para #navbarSupportedContent a div que guarda o menu responsivo. 
+No botão "Ver cursos" aponta para #modalMatricula a div do modal de matrícula. 
+No accordion os três botões apontam para #pergunta1, #pergunta2 e #pergunta3 as divs que guardam a resposta de cada pergunta. 
+Os itens também usam data-bs-parent="#faq" para abrir somente uma pergunta por vez.
+
+5) Três classes da apostila de 2022 que hoje estão descontinuadas — e por quais foram substituídas?
+Resposta: .text-muted por .text-body-secondary
+.navbar-dark por data-bs-theme="dark"
+.pl-* e .pr-* por .ps-* e .pe-*
+
+6) Se o bootstrap.bundle.min.js não carregar, quais partes da sua página param de funcionar e quais continuam?
+Resposta: Se o bootstrap.bundle.min.js não carregar os estilos do Bootstrap continuam funcionando,
+mas os componentes que dependem de JavaScript deixam de funcionar como o Navbar responsivo, Modal, Dropdown e Accordion.
+
+-->
